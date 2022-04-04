@@ -14,7 +14,7 @@ $("#currentDay").html(todayDate);
         // time block loops
 
         $(".time-block").each(function () {
-            
+
             var blockTime = parseInt($(this).attr("id").split("hour")[1]);
 
 
@@ -41,7 +41,7 @@ $("#currentDay").html(todayDate);
 
 
 $(document).ready(function () {
-    // saveBtn click listener 
+    // saveBtn listener 
     $(".saveBtn").on("click", function () {
 
         // Get nearby values of the description in JQuery
@@ -49,14 +49,14 @@ $(document).ready(function () {
         var time = $(this).parent().attr("id");
 
 
-        // Save text in local storage
+        // Save text to local storage
         localStorage.setItem(time, text);
     })
    
 
 
     // saved local storage items
-    $("#hour8 .description").val(localStorage.getItem("hour8"));
+    
     $("#hour9 .description").val(localStorage.getItem("hour9"));
     $("#hour10 .description").val(localStorage.getItem("hour10"));
     $("#hour11 .description").val(localStorage.getItem("hour11"));
