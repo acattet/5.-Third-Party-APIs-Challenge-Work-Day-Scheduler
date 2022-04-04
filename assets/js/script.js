@@ -44,13 +44,13 @@ $(document).ready(function () {
     // saveBtn listener 
     $(".saveBtn").on("click", function () {
 
-        // Get nearby values of the description in JQuery
-        var text = $(this).siblings(".description").val();
-        var time = $(this).parent().attr("id");
+     // link description class with hour id
+    var text = $(this).siblings(".description").val();
+    var time = $(this).parent().attr("id");
 
 
-        // Save text to local storage
-        localStorage.setItem(time, text);
+    // Save text to local storage
+    localStorage.setItem(time, text);
     })
    
 
